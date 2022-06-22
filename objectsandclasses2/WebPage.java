@@ -3,7 +3,7 @@ package objectsandclasses2;
 public class WebPage {
 
 
-    public final static String TITLE = "Landing Page"; // class variable
+    public static String TITLE = "Landing Page"; // class variable
     private int inputFieldsAmount; // instance variable
     protected String submitButtonColor; // instance variable
 
