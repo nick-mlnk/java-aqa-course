@@ -2,17 +2,18 @@ package objectsandclasses2;
 
 public class WebPage {
 
-    static String TITLE = "Landing Page"; // class variable
-    int inputFieldsAmount; // instance variable
-    String submitButtonColor; // instance variable
+
+    public final static String TITLE = "Landing Page"; // class variable
+    private int inputFieldsAmount; // instance variable
+    protected String submitButtonColor; // instance variable
 
     // default constructor -> exists w/o declaration
-    WebPage() {
+    public WebPage() {
 
     }
 
     // constructor with params
-    WebPage(int inputFieldsAmount, String submitButtonColor) {
+    public WebPage(int inputFieldsAmount, String submitButtonColor) {
         this.inputFieldsAmount = inputFieldsAmount;
         this.submitButtonColor = submitButtonColor;
     }
@@ -25,7 +26,7 @@ public class WebPage {
     // Getter
     int getInputFieldsAmount() {
         int defaultFieldsAmount = 3; // local variable
-        return inputFieldsAmount > 0 ? inputFieldsAmount : defaultFieldsAmount;
+        return inputFieldsAmount + defaultFieldsAmount; // ternary operator
     }
 
     String getSubmitButtonColor() {

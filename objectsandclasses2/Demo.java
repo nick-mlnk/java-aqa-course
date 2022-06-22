@@ -14,6 +14,5 @@ public class Demo {
         // https://www.tutorialspoint.com/java/java_object_classes.htm
         // https://www.tutorialspoint.com/java/java_constructors.htm
         // https://www.tutorialspoint.com/java/java_modifier_types.htm
-        // TODO add modifier types
     }
 }
