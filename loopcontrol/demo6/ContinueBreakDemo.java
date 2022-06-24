@@ -11,5 +11,8 @@ public class ContinueBreakDemo {
                 System.out.println(number);
             }
         }
+
+        // https://www.tutorialspoint.com/java/java_continue_statement.htm
+        // https://www.tutorialspoint.com/java/java_break_statement.htm
     }
 }
