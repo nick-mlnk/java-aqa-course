@@ -11,7 +11,7 @@ Java automation quality assurance course
 
 Home-tasks:
 1. Given array {3, 5, 8, 13, 21, 34, 55}, 
-print a number that can be divided by 5 and greater than 10, 
+print a numbers that can be divided by 5 and greater than 10, 
 using for loop
 2. Given array {3, 5, 8, 13, 21, 34, 55}
 find numbers greater than 10 or divided by 5 and increased them w/ 10
