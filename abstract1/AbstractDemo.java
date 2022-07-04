@@ -8,5 +8,7 @@ public class AbstractDemo {
 
         System.out.println(dev1);
         System.out.println(dev2);
+
+        // https://www.tutorialspoint.com/java/java_abstraction.htm
     }
 }
