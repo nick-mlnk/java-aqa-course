@@ -10,9 +10,9 @@ Java automation quality assurance course
 
 ### Home-task
 
-1. Create class User w/ fields: String nickname, password
+1. Create class **User** w/ fields: `String nickname, password`
     - Add constructor, accessors, toString if needed
-2. Create class Demo to be able to demo the app here
+2. Create class **Demo** to be able to demo the app here
     - create 3 users:
       ```
       User user1 = new User("nmelnk", "Abcd1234");
@@ -20,13 +20,13 @@ Java automation quality assurance course
       User user3 = new User("nonk", "Ijkl#!78");
       ```
     - create ```Map<Object, Object> userCredentials```
-    - create List<User> users that consists of users above
+    - create `List<User> users` that consists of users above
 3. Now we need to encrypt partially users' passwords:
     - we need to replace numbers in passwords with special characters: 
       *i.e. Abcd1234 -> Abcd####*
     - we need to keep user's passwords as it were initially but put new encrypted values to the userCredentials(map
       above)
-4. As result print userCredentials map and users list
+4. As result print _userCredentials_ map and _users_ list
 
 ##### HINT**
 
