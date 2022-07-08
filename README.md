@@ -15,7 +15,7 @@ Java automation quality assurance course
     - constructors and accessors if needed
     - method: abstract int getAmountOfEmployees()
 2. Create subclass of Department w/ name ItDepartment
-3. Create subclasses of Department classes w/ names QaDepartment & DevDepartment
+3. Create subclasses of ItDepartment classes w/ names QaDepartment & DevDepartment
 4. Create Enum w/ name Title
     - values: JUNIOR, MIDDLE, SENIOR, TECH_LEAD, MANAGER
 5. Create interface ISpecialty
