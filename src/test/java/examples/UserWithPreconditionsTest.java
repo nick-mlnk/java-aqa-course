@@ -1,4 +1,4 @@
-package testNGexample;
+package examples;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;

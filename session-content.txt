@@ -1,0 +1,116 @@
+1. right-click on your project root folder
+2. choose 'Add Framework Support'
+2.1 choose Maven and apply
+3. add dependencies: testng/faker/assertj to 'pom.xml'
+u can find them by reference https://mvnrepository.com/repos/central
+4. create package in /test/java/testNGexample and class 'User' within
+5. add String fields name/email/pass to class
+6. add constructor, overrided methods 'equals', 'toString'
+
+Test
+7. create class UserTest
+8. within the class UserTest create test:
+@Test
+    public void testUsersAreEqual() {
+        User user1 = new User("Nick");
+        User user2 = new User("Nick");
+
+        Assert.assertEquals(user1, user2);
+        Assert.assertTrue(user1.equals(user2));
+        Assert.assertEquals(user1, user2, "Users should be equal");
+    }
+
+Faker
+9. within the class User add String company field with proper accesors and initialize it with Faker().company().name() in constructor
+10. within the class UserTest add test:
+@Test
+    public void testUsersAreFromTheSameCompany() {
+        User user1 = new User("Nick");
+        User user2 = new User("John");
+
+        Assert.assertEquals(user1.getCompany(), user2.getCompany(),
+                format("\n%s \nAND \n%s\nshould have the same companies", user1, user2));
+    }
+11. add next class UserWithPreconditionsTest with data below:
+	User user1, user2;
+
+    @BeforeClass
+    public void setup() {
+        user1 = new User("Nick");
+        user2 = new User("Nick");
+    }
+
+    @Test
+    public void testUsersAreEqual() {
+        Assert.assertEquals(user1, user2, "Users should be equal");
+    }
+
+    @Test
+    public void testUsersAreFromTheSameCompany() {
+        Assert.assertEquals(user1.getCompany(), user2.getCompany(),
+                format("\n%s \nAND \n%s\nshould have the same companies", user1, user2));
+    }
+12. add before method preconditions:
+@BeforeMethod(enabled = true)
+    public void changeUserCompany() {
+        user2.setCompany(user1.getCompany());
+    }
+13. create class UserWithDataProviderTest
+User user;
+
+    @BeforeClass
+    public void setup() {
+        user = new User("Nick");
+    }
+
+    @DataProvider
+    public static Object[][] userDataProvider() {
+        return new Object[][]{
+                {new User("Nick")},
+                {new User("Nick")},
+                {new User("Cris")},
+                {new User("Ben")},
+                {new User("Nick")}
+        };
+    }
+
+    @Test(dataProvider = "userDataProvider")
+    public void testUsersAreEqual(User user) {
+        Assert.assertEquals(this.user, user, "Users should be equal");
+    }
+
+    @Test(dataProvider = "userDataProvider")
+    public void testUsersAreFromTheSameCompany(User user) {
+        Assert.assertEquals(this.user.getCompany(), user.getCompany(),
+                format("\n%s \nAND \n%s\nshould have the same companies", this.user, user));
+    }
+14. add AssertJExampleTest class
+User user;
+
+    @BeforeClass
+    public void setup() {
+        user = new User("Nick");
+    }
+
+    @DataProvider
+    public static Object[][] userDataProvider() {
+        return new Object[][]{
+                {new User("Nick")},
+                {new User("Nick")},
+                {new User("Cris")},
+                {new User("Ben")},
+                {new User("Nick")}
+        };
+    }
+
+    @Test(dataProvider = "userDataProvider")
+    public void testUsersAreEqualAndHaveNoNullFields(User user) {
+        Assertions.assertThat(this.user)
+                .as("Users equality & absence of null fields")
+                .hasNoNullFieldsOrProperties()
+                .isEqualTo(user);
+    }
+15. run test w/ maven from CLI:
+mvn clean test -Dtest=AssertJExampleTest
+16. look in target directory for index.html
+17. Example with System.getProperty

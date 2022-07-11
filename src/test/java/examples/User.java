@@ -1,10 +1,10 @@
-package testNGexample;
+package examples;
 
 import com.github.javafaker.Faker;
 
 public class User {
 
-    private String name, email;
+    private String name, email, pass;
     private String company;
 
     public User(String name) {
