@@ -7,6 +7,7 @@ Java automation quality assurance course
 1. [list](list)
 2. [set](set)
 3. [map](map)
+4. [builder](builder)
 
 ### Home-task
 
@@ -22,7 +23,7 @@ Java automation quality assurance course
     - create ```Map<Object, Object> userCredentials```
     - create `List<User> users` that consists of users above
 3. Now we need to encrypt partially users' passwords:
-    - we need to replace numbers in passwords with special characters: 
+    - we need to replace numbers in passwords with special characters:
       *i.e. Abcd1234 -> Abcd####*
     - we need to keep user's passwords as it were initially but put new encrypted values to the userCredentials(map
       above)
