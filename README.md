@@ -6,6 +6,7 @@ Java automation quality assurance course
 
 **GIT Basics**
 
+<<<<<<< HEAD
 _Applicable for MacOS_
 
 1. Open the terminal
@@ -32,6 +33,7 @@ example:
 `git checkout -b <BRANCH_NAME>`
 
 7. After u make some changes in your local repo(working copy) u can check the status:
+   <<<<<<< HEAD
    `git status` or `git status -uall`
 
 8. Add file or all files to the staging area:
