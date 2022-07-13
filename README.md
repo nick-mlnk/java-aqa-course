@@ -6,7 +6,6 @@ Java automation quality assurance course
 
 **GIT Basics**
 
-<<<<<<< HEAD
 _Applicable for MacOS_
 
 1. Open the terminal
@@ -14,12 +13,13 @@ _Applicable for MacOS_
 3. If u see output similar to `git version 2.32.1 `
    that means that u have GIT already installed on your machine, Otherwise
    install it typing `brew install git`
-4.
 
 Git Workflow:
 
 ![git-workflow.png](resources/git-workflow.png)
+
 Branching:
+
 ![branching.png](resources/branching.png)
 
 5. Clone repo:
@@ -33,36 +33,35 @@ example:
 `git checkout -b <BRANCH_NAME>`
 
 7. After u make some changes in your local repo(working copy) u can check the status:
-   <<<<<<< HEAD
-   `git status` or `git status -uall`
+`git status` or `git status -uall`
 
-8. Add file or all files to the staging area:
+9. Add file or all files to the staging area:
    `git add <file.ext>` or `git add .`
-9. To commit the changes:
-   `git commit -m "<YOUR_MESSAGE>"`
-10. To view log details:
+10. To commit the changes:
+    `git commit -m "<YOUR_MESSAGE>"`
+11. To view log details:
     `git log`
-11. To view commit details:
+12. To view commit details:
     `git show <COMMIT_HASH>`
-12. To commit the changes with overwriting the last commit:
+13. To commit the changes with overwriting the last commit:
     `git commit --amend -m "<YOUR_MESSAGE>"`
-13. Push your changes to remote repo:
+14. Push your changes to remote repo:
     `git push`; for GITHUB using PAT: `git push https://<PAT>@github.com/<ORG>/<PROJECT>.git`
-14. Fetch the latest changes from master branch(remote repo):
+15. Fetch the latest changes from master branch(remote repo):
     `git pull origin master` or from another branch `git pull origin <BRANCH_NAME`
-15. Just to hide your changes to stack _without committing_:
+16. Just to hide your changes to stack _without committing_:
     `git stash`
-16. To return your hidden changes from stack:
+17. To return your hidden changes from stack:
     `git stash pop`
-17. To revert to previous commit or predefined commit:
+18. To revert to previous commit or predefined commit:
     `git reset --hard HEAD^1` or `git reset --hard <HASH_COMMIT>`
-18. Rename branch:
+19. Rename branch:
     `git branch -m <OLD_BRANCH_NAME> <NEW_BRANCH_NAME>`
-19. Delete branch:
+20. Delete branch:
     `git branch -D <BRANCH_NAME>`
-20. Fetch origin branch:
+21. Fetch origin branch:
     `git fetch origin <BRANCH_NAME`
-21. Merge branch in your current branch:
+22. Merge branch in your current branch:
     `git merge <BRANCH_NAME>`
 
 [GIT Tutorial](https://www.tutorialspoint.com/git/)
