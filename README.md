@@ -12,6 +12,8 @@ Java automation quality assurance course
 ### Home-task
 
 Add Accountant Department which extends from Department but not includes in ItDepartment
+Add class Accountant implements ISpecialty
+Accountant Department has field Accountant[] accountants
 Add tests using TestNG & AssertJ:
 
 - ItDepartment is not empty
