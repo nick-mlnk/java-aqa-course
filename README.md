@@ -2,22 +2,20 @@
 
 Java automation quality assurance course
 
-### Session 8 covers
+### Session 11 covers
 
-1. [TestNG examples](src/test/java/examples)
-2. [Faker](src/test/java/examples) -> User class
-3. Maven
-4. System/Environment variables
+1. [RestAssured Test](src/test/java/examples/restApiTests)
 
 ### Home-task
 
-Add Accountant Department which extends from Department but not includes in ItDepartment
-Add class Accountant implements ISpecialty
-Accountant Department has field Accountant[] accountants
-Add tests using TestNG & AssertJ:
+Create class RestAssuredTest using Rest Assured
+Service that will be tested: https://gorest.co.in
+Create tests using Rest Assured framework:
 
-- ItDepartment is not empty
-- ItDepartment contains QA&Dev -departments
-- ItDepartment does not contains accountant department
-- Size qa department is greater than 10
-- Size dev department is greater than 20
+- get
+- post
+- update(patch)
+- delete
+
+Verify status code of the responses
+Add logging for the failed validations
