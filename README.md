@@ -19,3 +19,9 @@ Java automation quality assurance course
 2. Given:
     `int[] array = {110, 28, 35, 56, 290, 1, 3, 567};`
     #### Calculate sum of all numbers indexes of which are even
+3. Given:
+   #### Write a Java program to find first non repeating character in a string
+   `String str = "gibblegabbler";`
+4. Given:
+   #### Write a Java program to print after removing duplicates from a given string
+   `String str = "Automation is easy";`
