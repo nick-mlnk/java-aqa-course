@@ -1,0 +1,9 @@
+1. Add libraries to POM.xml: lombok, jackson, rest-assured
+2. create src package with main and test packages.
+3. create data layer
+4. create utils layer
+5. create RestApiUtils class with proper data within
+7. create JsonUtils
+6. create UserData with lombok annotations
+8. create GoRestApiController
+9. create test class
