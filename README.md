@@ -2,20 +2,12 @@
 
 Java automation quality assurance course
 
-### Session 11 covers
+### Session 13 covers
 
-1. [RestAssured Test](src/test/java/examples/restApiTests)
+- [Appium Selenide Test Example](src/test/java/examples/mobile/ExampleTest.java)
+- [appium](https://appium.io/)
+- [selenide](https://selenide.org/)
 
 ### Home-task
 
-Create class RestAssuredTest using Rest Assured
-Service that will be tested: https://gorest.co.in
-Create tests using Rest Assured framework:
-
-- get
-- post
-- update(patch)
-- delete
-
-Verify status code of the responses
-Add logging for the failed validations
+Create few mobile tests using appium, selenide, assertJ, testNG
