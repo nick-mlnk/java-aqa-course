@@ -26,3 +26,4 @@ out/
 /target/
 .DS_Store
 *.iml
+build/
