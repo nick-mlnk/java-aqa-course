@@ -11,3 +11,6 @@ Java automation quality assurance course
 ### Home-task
 
 Create few mobile tests using appium, selenide, assertJ, testNG
+
+#### To Read:
+- [mobile locators](https://www.browserstack.com/guide/locators-in-appium)
