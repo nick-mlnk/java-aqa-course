@@ -1,3 +1,7 @@
-1. Add dependency selenide-appium to POM
-2. Write test
+1. Create utils package with Platform enum within
+2. Create ConfigurationManager class
+3.Create ScreenObjects: BaseScreen, HomeScreen,
+4. Create MeetingComponent
+5. Create MeetingScreen, MeetingDetails
+6. Create ExampleScreenObjectTest
 

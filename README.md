@@ -11,3 +11,6 @@ Java automation quality assurance course
 ### Home-task
 
 Create few mobile tests using appium, selenide, assertJ, testNG
+
+#### To Read:
+- [patterns](https://www.ministryoftesting.com/dojo/lessons/common-ui-automation-patterns-and-methodologies-real-world-examples)
